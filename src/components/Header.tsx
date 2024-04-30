@@ -19,7 +19,7 @@ const Header = () => {
           className="tracking-widest bg-red-600 my-auto font-bold p-2 sm:p-3 text-xs sm:text-lg text-white uppercase ml-1 sm:mx-4"
           to={"/"}
         >
-          Netflix
+          ITion
         </Link>
 
         <form
