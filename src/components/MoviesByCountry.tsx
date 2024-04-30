@@ -63,9 +63,9 @@ const MoviesByCountry = () => {
   };
 
   return (
-    <div className="max-w-screen-lg mt-7 mb-32">
+    <div className="max-w-screen-lg items-center self-center m-auto mt-7 mb-32">
       <h1 className="font-semibold text-xl ml-5">Filter The Movies</h1>
-      <section className="ml-8 mt-4 border-y p-3 flex mx-7 justify-between">
+      <section className="ml-8 mt-4 border-y p-3 flex mx-7 m-auto justify-between gap-2 flex-wrap">
         <div className="">
           <label htmlFor="Contries" className="">
             Contries
@@ -73,12 +73,12 @@ const MoviesByCountry = () => {
           <select
             name="Contries"
             onChange={(e) => setCountry(e.target.value)}
-            className="h-auto w-auto ml-5"
+            className="h-auto w-32 ml-7 sm:ml-3"
             defaultValue={"India"}
           >
             {countries.map((i: string, index) => {
               return (
-                <option key={index} className="ml-10" value={i}>
+                <option key={index} className="sm:ml-10" value={i}>
                   {i}
                 </option>
               );
@@ -93,14 +93,14 @@ const MoviesByCountry = () => {
           <select
             name="Languages"
             onChange={(e) => SetLanguages(e.target.value)}
-            className="h-auto w-auto ml-5"
+            className="h-auto w-32 ml-7 sm:ml-3"
             defaultValue={"Hindi"}
           >
             {languages.map((i: string, index) => {
               return (
-                <option key={index} className="ml-10" value={i}>
-                  {i}
-                </option>
+                <option key={index} className="sm:ml-10" value={i}>
+                {i}
+              </option>
               );
             })}
           </select>
@@ -113,19 +113,20 @@ const MoviesByCountry = () => {
           <select
             name="Genres "
             onChange={(e) => SetGenres(e.target.value)}
-            className="h-auto w-auto ml-5"
+            className="h-auto w-32 ml-7 sm:ml-3"
             defaultValue={"Action"}
           >
             {genres.map((i: string, index) => {
               return (
-                <option key={index} className="ml-10" value={i}>
-                  {i}
-                </option>
+                <option key={index} className="sm:ml-10" value={i}>
+                {i}
+              </option>
               );
             })}
           </select>
         </div>
       </section>
+
       <section className="flex flex-row gap-6 flex-wrap my-5 justify-center">
         {GetCountry.map((i) => (
           <div

@@ -40,12 +40,12 @@ const Home = () => {
   }
 
   return (
-    <section className="max-w-screen-lg m-auto mt-5 mx-7">
+    <section className="max-w-screen-lg m-auto">
       <h1 className="font-bold text-2xl">Latest Movies</h1>
-      <div className="flex flex-row gap-6 flex-wrap my-5 justify-center">
+      <div className="flex flex-row gap-6 flex-wrap m-auto items-center my-5 justify-center">
         {top.map((item, index) => (
           <div
-            className="w-36 h-auto p-2 border rounded-md bg-gray-100 border-black duration-200 hover:scale-105"
+            className="w-36 h-auto p-2 border cursor-pointer rounded-md bg-gray-100 border-black duration-200 hover:scale-105"
             key={index}
             onClick={()=>hnadleMovie(item.movietitle)}
           >
