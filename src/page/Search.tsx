@@ -47,8 +47,6 @@ const Search = () => {
     navigate(`/movie/${name}`);
   };
 
-  console.log(searchResult);
-
   return (
     <section className="max-w-screen-lg m-auto p-8">
       <h1 className="font-semibold text-2xl">Search Result</h1>
