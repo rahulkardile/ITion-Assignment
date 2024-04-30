@@ -16,7 +16,7 @@ const Header = () => {
     <header id="hero" className="flex flex-col p-4">
       <nav className="flex gap-2 justify-between">
         <Link
-          className="tracking-widest bg-red-600 my-auto font-bold p-2 sm:p-3 text-xs flex flex-col gap-1 text-center sm:text-lg text-white uppercase ml-1 sm:mx-4"
+          className="tracking-widest bg-red-600 my-auto font-bold p-2 sm:p-4 text-xs flex flex-col gap-1 text-center sm:text-sm text-white uppercase ml-1 sm:mx-4"
           to={"/"}
         >
           <span>ITion</span>
