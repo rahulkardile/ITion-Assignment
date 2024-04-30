@@ -1,4 +1,3 @@
-import { SetStateAction, useState } from "react";
 import Data, { DataInterface } from "../RawData";
 import notAwailable from "../assets/Poster-Not-Available.jpg";
 import { useNavigate, useParams } from "react-router-dom";
@@ -54,7 +53,7 @@ const Search = () => {
     <section className="max-w-screen-lg m-auto p-8">
       <h1 className="font-semibold text-2xl">Search Result</h1>
       <div className="mt-6 flex flex-wrap justify-center items-center gap-4">
-        {searchResult.map((item, index) => (
+        { searchResult.length > 0 ? searchResult.map((item, index) => (
           <div
             className="w-28 sm:w-32 h-auto p-2 border cursor-pointer rounded-md bg-gray-100 border-black duration-200 hover:scale-105"
             key={index}
@@ -76,7 +75,7 @@ const Search = () => {
               <p className="truncate text-xs">IMDB ID: {item.imdbmovieid}</p>
             </div>
           </div>
-        ))}
+        )) : <h1>Not Found!</h1>}
       </div>
     </section>
   );
